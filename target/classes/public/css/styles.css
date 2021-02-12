@@ -1,0 +1,6 @@
+#profile-picture {
+    clip-path: circle();
+}
+body{
+    padding-top: 10%;
+}

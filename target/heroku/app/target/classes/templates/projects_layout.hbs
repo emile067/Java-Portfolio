@@ -1,0 +1,27 @@
+{{#partial "styles"}}
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+{{/partial}}
+{{#partial "content"}}
+    <div class="row d-flex justify-content-center">
+        {{#each projects}}
+            <div class="col-4">
+                <div class="card bg-light mb-3" style="width: 18rem; padding: 5px;">
+                    <div class="card-header">{{name}}</div>
+                    <img src="images/{{imageNames}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{{description}}</p>
+                    </div>
+                    <ul>
+                        {{#each languages}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <div class="card-body bg-light">
+                        <a href="{{repoLink}}" class="card-link">Repository</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{/partial}}
+{{> layout.hbs}}
