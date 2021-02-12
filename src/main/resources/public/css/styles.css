@@ -1,7 +1,6 @@
 #profile-picture {
     clip-path: circle();
 }
-#navigation{
-    height: 30%;
-    width: !00%;
+body{
+    padding-top: 10%;
 }

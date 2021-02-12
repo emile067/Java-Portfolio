@@ -5,18 +5,18 @@
     <div class="row d-flex justify-content-center">
         {{#each projects}}
             <div class="col-4">
-                <div class="card" style="width: 18rem; height: 50rem;">
+                <div class="card bg-light mb-3" style="width: 18rem; padding: 5px;">
+                    <div class="card-header">{{name}}</div>
                     <img src="images/{{imageNames}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{name}}</h5>
                         <p class="card-text">{{description}}</p>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul>
                         {{#each languages}}
-                            <li class="list-group-item">{{this}}</li>
+                            <li>{{this}}</li>
                         {{/each}}
                     </ul>
-                    <div class="card-body">
+                    <div class="card-body bg-light">
                         <a href="{{repoLink}}" class="card-link">Repository</a>
                     </div>
                 </div>
