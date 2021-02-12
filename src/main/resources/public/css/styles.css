@@ -1,5 +1,7 @@
 #profile-picture {
-    height: 300px;
-    width: 300px;
     clip-path: circle();
+}
+#navigation{
+    height: 30%;
+    width: !00%;
 }

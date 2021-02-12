@@ -5,10 +5,10 @@ public class Project {
     private String name;
     private String description;
     private List<String> languages= new ArrayList<String>();
-    private List<String> imageNames= new ArrayList<String>();
+    private String imageNames;
     private String repoLink;
 
-    public Project(String name, String description, List<String> languages, List<String> imageNames, String repoLink) {
+    public Project(String name, String description, List<String> languages, String imageNames, String repoLink) {
         this.name = name;
         this.description = description;
         this.languages = languages;
@@ -40,11 +40,11 @@ public class Project {
         this.languages = languages;
     }
 
-    public List<String> getImageNames() {
+    public String getImageNames() {
         return imageNames;
     }
 
-    public void setImageNames(List<String> imageNames) {
+    public void setImageNames(String imageNames) {
         this.imageNames = imageNames;
     }
 

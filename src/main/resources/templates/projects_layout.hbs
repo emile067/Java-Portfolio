@@ -2,5 +2,26 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 {{/partial}}
 {{#partial "content"}}
+    <div class="row d-flex justify-content-center">
+        {{#each projects}}
+            <div class="col-4">
+                <div class="card" style="width: 18rem; height: 50rem;">
+                    <img src="images/{{imageNames}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">{{description}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        {{#each languages}}
+                            <li class="list-group-item">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <div class="card-body">
+                        <a href="{{repoLink}}" class="card-link">Repository</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
 {{/partial}}
 {{> layout.hbs}}
